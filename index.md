@@ -7,6 +7,11 @@
 - [Graph canonicalization](https://github.com/chiral-data/rust-canonical-numbering)
 - [Cheminformatics Algorithms in Rust](https://github.com/chiral-data/rust-chem)
 
+# Training
+
+## GPU Programming By Examples
+
+
 # Supported By
 - Fukuoka Growth Next [link](https://growth-next.com/)
 - Fukuoka Global Startup Coffee [link](https://startupcafe.jp/en/top-en/)
