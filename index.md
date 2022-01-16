@@ -9,7 +9,7 @@
 
 # Training
 
-## GPU Programming By Examples
+- [GPU Programming By Examples](docs/training_gpu)
 
 
 # Supported By
