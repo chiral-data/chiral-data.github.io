@@ -19,9 +19,9 @@ will be available online soon!
 ## Description
 This is a tutoring plus practice event for parallel programming on GPU. It's entry-level for programmers with Python experiences. We will work under [Google Colab](https://colab.research.google.com/?utm_source=scs-index) environment, therefore no self-owned GPU hardware is required for participation.
 
-Understanding C/C++ is better but not required. There will be optional activities of implementing the two examples above purely in CUDA C for participants who are willing to dive deeper. 
+Understanding C/C++ is better but not required. There will be optional activities of implementing the two examples above purely in CUDA C for participants who are willing to dive deeper. _A self-owned GPU is required for this practice._ 
 
-A brief introduction of how the tech stack evovles into the AI era will be a warm-up from the begining, followed by some essential concepts of GPU parallel programming that are quite different from single thread programming. The pratice session will be composed of two examples: a simple one of large-size array operation will be demonstrated step by step and a complex one of molecular similarity searching from cheminformatic applications will be implemented by participants with discussions and supports during the event.
+A brief introduction of how the tech stack evolves into the AI era will be a warm-up from the beginning, followed by some essential concepts of GPU parallel programming that are quite different from single thread programming. The practice session will be composed of two examples: a simple one of large-size array operation will be demonstrated step by step and a complex one of molecular similarity searching from cheminformatics will be implemented by participants with discussions and supports during the event.
 
 We are looking forward to your participation and let's learn by coding!
 
