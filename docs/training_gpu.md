@@ -7,6 +7,10 @@
 ## Slides
 will be available online soon!
 
+## Materials for Coding Session
+- Data: [ChEMBL 28](https://drive.google.com/drive/folders/11fhFlzunFonT5Sq3oLFf1L3n2hCIRhA1?usp=sharing)
+- Codes: [Colab Notebooks](https://drive.google.com/drive/folders/16rSgHNhGZJ1QpO2dffnBqikMtvq3w1gS?usp=sharing)
+
 ## Outline
 - Brief History of GPU, Big Data and Machine Learning
 - Essential Paradigm of GPU Parallel Programming
