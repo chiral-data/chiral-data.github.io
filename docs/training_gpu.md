@@ -5,7 +5,7 @@
 - [Engineer Cafe - Hacker Space Fukuoka](https://engineercafe.jp/ja/) - [赤煉瓦文化館 - 福岡市中央区天神1丁目15番30号](https://goo.gl/maps/5qXgfFTVxNQgUw5y6)
 
 ## Slides
-- [Link](https://c1djn.csb.app)
+- [Link](https://ikugr.csb.app)
 
 ## Materials for Coding Session
 - Codes: [Colab Notebooks](https://drive.google.com/drive/folders/16rSgHNhGZJ1QpO2dffnBqikMtvq3w1gS?usp=sharing)
