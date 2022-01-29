@@ -1,4 +1,4 @@
-# GPU Parallel Programming By Examples - Introduction
+# GPU Parallel Programming By Examples - The Bandwidth of Parallel Computing
 
 ## Schedule and Place
 - 14:00 - 16:00, January 29th, 2022

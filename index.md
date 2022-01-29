@@ -9,7 +9,7 @@
 
 # Training
 
-- [GPU Programming By Examples](docs/training_gpu)
+- [GPU Programming By Examples - (1) The Bandwidth of Parallel Computing](docs/training_gpu)
 
 
 # Supported By
