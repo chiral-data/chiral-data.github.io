@@ -5,7 +5,7 @@
 - [Engineer Cafe - Hacker Space Fukuoka](https://engineercafe.jp/ja/) - [赤煉瓦文化館 - 福岡市中央区天神1丁目15番30号](https://goo.gl/maps/5qXgfFTVxNQgUw5y6)
 
 ## Slides
-will be available online soon!
+- [Link](https://tob72.csb.app)
 
 ## Materials for Coding Session
 - Data: [ChEMBL 28](https://drive.google.com/drive/folders/11fhFlzunFonT5Sq3oLFf1L3n2hCIRhA1?usp=sharing)
@@ -39,4 +39,12 @@ We are looking forward to your participation and let's learn by coding!
 - [NVIDIA HPC SDK Documentation](https://docs.nvidia.com/hpc-sdk/index.html)
 - [CUDA Education & Training](https://developer.nvidia.com/cuda-education-training)
 - [Caltech Course: CS179 GPU Programming](http://courses.cms.caltech.edu/cs179/)
+
+## Questions
+
+to be updated after the event.
+
+## Feedback for the event
+
+Thank you in advance to send us feedback! [Link](https://docs.google.com/forms/d/e/1FAIpQLScAsloqOyWq2t4oqgwlOKRyWkPBMMSq96lF8I5HNJJUl6G63Q/viewform)
 
