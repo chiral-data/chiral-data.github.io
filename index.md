@@ -14,4 +14,4 @@
 
 # Supported By
 - Fukuoka Growth Next [link](https://growth-next.com/)
-- Fukuoka Global Startup Coffee [link](https://startupcafe.jp/en/top-en/)
+- Fukuoka Global Startup Cafe [link](https://startupcafe.jp/en/top-en/)
