@@ -13,7 +13,8 @@
 
 # Skill Set
 
-| ![C++](https://en.wikipedia.org/wiki/C%2B%2B#/media/File:ISO_C++_Logo.svg) | ![Fortran](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Fortran_logo.svg/120px-Fortran_logo.svg.png) | ![CUDA](https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/Nvidia_CUDA_Logo.jpg/300px-Nvidia_CUDA_Logo.jpg) | ![Python](https://www.python.org/static/img/python-logo.png) | ![Rust](https://www.rust-lang.org/static/images/rust-logo-blk.svg) |
+| C++ | Fortran | CUDA | Python | Rust |
+| ![C++](https://raw.githubusercontent.com/isocpp/logos/master/cpp_logo.png) | ![Fortran](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Fortran_logo.svg/120px-Fortran_logo.svg.png) | ![CUDA](https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/Nvidia_CUDA_Logo.jpg/300px-Nvidia_CUDA_Logo.jpg) | ![Python](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/121px-Python-logo-notext.svg.png) | ![Rust](https://www.rust-lang.org/static/images/rust-logo-blk.svg) |
 
 
 # Supported By
