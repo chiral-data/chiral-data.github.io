@@ -14,9 +14,10 @@
 
 # Open-source Repositories
 
-- [ChiralDB](https://github.com/chiral-data/chiral-db): the main repository for ChiralDB
+- [![Latest Version](https://img.shields.io/crates/v/chiral-db.svg)](https://crates.io/crates/chiral-db) [ChiralDB](https://github.com/chiral-data/chiral-db): the main repository for ChiralDB
 - [ChiralDB gPRC](https://github.com/chiral-data/chiral-db-grpc): the gPRC service wrapper for ChiralDB
 - [ChiralDB gPRC Client](https://github.com/chiral-data/chiral-db-grpc-client): accessing ChiralDB services from other programming languages
+- [![Latest Version](https://img.shields.io/crates/v/openbabel.svg)](https://crates.io/crates/openbabel) [OpenBabel Rust bindings](https://github.com/rogerwq/openbabel-rust)
 - [Graph canonicalization](https://github.com/chiral-data/rust-canonical-numbering)
 
 <!-- # Skill Set
