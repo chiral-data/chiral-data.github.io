@@ -14,6 +14,7 @@
 
 ## News
 
+- 2022-08-15: ChiralDB Service Demo available at [demo link](http://demo.chiral.one/)
 - 2022-07-31: ChiralDB Free Version 0.2.0 released. ChiralDB Pro Performance Test Report issued.
 - 2022-06-30: ChiralDB Free Version 0.1.0 released. 
 
@@ -26,7 +27,8 @@
 ## [![GitHub last commit (branch)](https://img.shields.io/github/last-commit/chiral-data/chiral-db-grpc/main?style=flat-square)](https://github.com/chiral-data/chiral-db-grpc) ChiralDB Server
 ## [![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/chiraljp/chiral-db-server/latest?style=flat-square)](https://hub.docker.com/r/chiraljp/chiral-db-server) ChiralDB Server - Docker Image
 
-<!-- accessing ChiralDB services from other programming languages -->
+<!-- accessing ChiralDB services --> 
+## ![crates](https://img.shields.io/crates/v/chiral-db-grpc-client-rust?style=flat-square) ChiralDB Client - Rust
 ## ![PyPI](https://img.shields.io/pypi/v/chiral_db_grpc_client) ChiralDB Client - Python
 ## ![npm](https://img.shields.io/npm/v/chiral-db-grpc-client-ts?style=flat-square) ChiralDB Client - JavaScript
 
