@@ -1,7 +1,7 @@
 #!/bin/sh
 # Install Chiral Command-Line-Interface
 
-CHIRAL_RELEASE_ROOT="https://github.com/chiral-data/chiral-db/releases/download/v0.1.1"
+CHIRAL_RELEASE_ROOT="https://github.com/chiral-data/chiral-db/releases/download/v0.1.0"
 
 main() {
     get_openssl || return 1
