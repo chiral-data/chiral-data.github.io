@@ -4,22 +4,11 @@
 CHIRAL_RELEASE_ROOT="https://github.com/chiral-data/chiral-db/releases/download/v0.1.2"
 
 main() {
-    local _bin_name="chiral"
+    local _bin_name="chiral-pro"
     local _os_type="linux"
     local _openssl_ver="1"
-    local _pro_ver=""
     local _suffix=""
 
-    while getopts v:o: opt
-    do
-        case "${opt}" in
-            v) _pro_ver="$OPTARG";;
-            o) _os_type="$OPTARG";;
-        esac
-    done
-    if [ "$_pro_ver" = pro ]; then
-        _bin_name="chiral-pro"
-    fi
     if [ "$_os_type" = win ]; then
         if [ "$_pro_ver" != pro ]; then
             echo "Chiral-Cli Free Version does not support Windows."
@@ -34,7 +23,7 @@ main() {
         _os_type="$RETVAL"
     fi
 
-    say "Downloading Chiral Command-Line-Interface for ${_os_type} with OpenSSL version ${_openssl_ver} ..."
+    say "Downloading Chiral Command-Line-Interface Pro for ${_os_type} with OpenSSL version ${_openssl_ver} ..."
     local _url="${CHIRAL_RELEASE_ROOT}/${_bin_name}-${_os_type}-openssl-${_openssl_ver}${_suffix}"
     local _err=$(curl --silent --show-error --location "$_url" --output "$_bin_name$_suffix" 2>&1)
     local _status=$?
