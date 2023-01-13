@@ -2,6 +2,7 @@
 # Chiral: An Open-Source High-Performance Data Processing Tool
 
 ---
+[Documentation](https://docs.chiral.one)
 
 ## Install Chiral Command-Line-Interface
 
