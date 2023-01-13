@@ -10,17 +10,22 @@ main() {
     local _pro_ver=""
     local _suffix=""
 
-    while getopts v:os: opt
+    while getopts v:o: opt
     do
         case "${opt}" in
             v) _pro_ver="$OPTARG";;
-            os) _os_type="$OPTARG";;
+            o) _os_type="$OPTARG";;
         esac
     done
     if [ "$_pro_ver" = pro ]; then
         _bin_name="chiral-pro"
     fi
     if [ "$_os_type" = win ]; then
+        if [ "$_pro_ver" != pro ]; then
+            echo "Chiral-Cli Free Version does not support Windows."
+            echo "Download Pro Version instead ..."
+            return 1
+        fi
         _suffix=".exe"
     else
         get_openssl || return 1
