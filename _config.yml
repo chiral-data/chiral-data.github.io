@@ -3,6 +3,7 @@ owner: chiral
 plugins:
 - jekyll-remote-theme
 - jekyll-tabs
+- "jekyll-github-metadata"
 logo: /assets/img/logo.png
 description: 
   - An Open-Source Tool for High-Performance Data Processing and Visualization written in Rust
