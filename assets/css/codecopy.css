@@ -1,0 +1,41 @@
+/* Reference:
+https://www.neoslash.net/blog/jekyllcopy 
+https://remarkablemark.org/blog/2021/06/01/add-copy-code-to-clipboard-button-to-jeyll-site/
+*/
+
+pre.highlight {
+    padding: 8px 12px;
+    position: relative;
+    overflow: auto;
+    white-space: pre;
+    word-wrap: normal;
+}
+
+pre.highlight > code {
+    border: 0;
+    overflow-x: auto;
+    padding-right: 0;
+    padding-left: 0;
+    font-size: 18px;
+}
+
+pre.highlight > button {
+    opacity: 0;
+    color: rgba(246, 145, 63, 0.8);
+    position: absolute;
+    font-size: 18px;
+    right: 5px;
+    top: 5px; 
+
+}
+
+pre.highlight:hover > button {
+    opacity: 1;
+    background: rgba(127, 127, 127, 0.9);
+    opacity: 1;
+}
+
+pre.highlight > button:active,
+pre.highlight > button:focus {
+    opacity: 1;
+}
