@@ -5,6 +5,7 @@ plugins:
 - jekyll-tabs
 logo: /assets/img/logo.png
 description: An Open-Source Tool for High-Performance Data Processing and Visualization written in Rust
+url: https://www.chiral.one
 
 title: chiral
 repository: chiral-data/chiral-data.github.io 
