@@ -24,6 +24,7 @@ Download from this [link](https://github.com/chiral-data/chiral-db/releases/down
 {% endtab %}
 {% endtabs %}
 
+### On Windows
 
 ## [Applications](docs/applications)
 
