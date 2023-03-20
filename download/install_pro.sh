@@ -1,10 +1,10 @@
 #!/bin/sh
 # Install Chiral Command-Line-Interface
 
-CHIRAL_RELEASE_ROOT="https://github.com/chiral-data/chiral-db/releases/download/v0.1.2"
+CHIRAL_RELEASE_ROOT="https://github.com/chiral-data/chiral/releases/download/v0.1.3"
 
 main() {
-    local _bin_name="chiral-pro"
+    local _bin_name="chiral-cli-pro"
     local _os_type="linux"
     local _openssl_ver="1"
     local _suffix=""
