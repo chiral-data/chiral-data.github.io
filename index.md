@@ -1,12 +1,9 @@
 
-# Chiral: An Open-Source High-Performance Data Processing Tool
-
----
-
 ## Install Chiral Command-Line-Interface
 
-### On Linux and macOS systems
+{% tabs log %}
 
+{% tab log Linux & macOS %}
 ### Free Version
 ```bash
 curl https://www.chiral.one/download/install.sh -sSf | sh
@@ -16,18 +13,36 @@ curl https://www.chiral.one/download/install.sh -sSf | sh
 ```bash
 curl https://www.chiral.one/download/install_pro.sh -sSf | sh
 ```
+{% endtab %}
 
-### On Windows
-
+{% tab log Windows %}
 ### Free Version
 Not supported yet
 
 ### Pro Version
 Download from this [link](https://github.com/chiral-data/chiral-db/releases/download/v0.1.2/chiral-pro-win.exe)
+{% endtab %}
+{% endtabs %}
+
+### On Windows
+
+## [Applications](docs/applications)
+
+- OpenBabel
+- ReCGen
+
+
+
+
+
+## Documentation
+
+[link](https://docs.chiral.one)
+
 
 ## News
 
-- 2023-01-13: chiral-cli Pro v0.1.2 is released. A cluster of 20+ servers from Sakura Internet is used as the computing backend.
+- 2023-01-13: chiral-cli Pro v0.1.2 is released. A cluster of 20+ servers from [SAKURA internet](https://www.sakura.ad.jp/) is used as the computing backend.
 - 2023-01-06: chiral-cli v0.1.0 pre release [link](https://github.com/chiral-data/chiral-db/releases/tag/v0.1.0)
 - 2022-11-30: Demo service stopped
 - 2022-08-15: ChiralDB Service Demo available at [demo link](http://demo.chiral.one/), [Performance Test Report](docs/performance_test)
@@ -37,7 +52,7 @@ Download from this [link](https://github.com/chiral-data/chiral-db/releases/down
 
 ## Open-Source Repositories
 
-### [![GitHub last commit (branch)](https://img.shields.io/github/last-commit/chiral-data/chiral-db/main?style=flat-square)](https://github.com/chiral-data/chiral-db) Chiral Main Repo
+### [![GitHub last commit (branch)](https://img.shields.io/github/last-commit/chiral-data/chiral/main?style=flat-square)](https://github.com/chiral-data/chiral-db) Chiral Main Repo
 ### [![Latest Version](https://img.shields.io/crates/v/openbabel.svg?style=flat-square)](https://crates.io/crates/openbabel) [![GitHub last commit](https://img.shields.io/github/last-commit/rogerwq/openbabel-rust)](https://github.com/rogerwq/openbabel-rust) OpenBabel Rust Bindings
 ### ![Crates.io](https://img.shields.io/crates/v/graph-symmetry?style=flat-square) [![GitHub last commit](https://img.shields.io/github/last-commit/chiral-data/rust-graph-symmetry?style=flat-square)](https://github.com/chiral-data/rust-graph-symmetry) Graph Symmetry
 
