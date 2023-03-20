@@ -1,3 +1,4 @@
+----
 
 ## Install Chiral Command-Line-Interface
 
@@ -20,19 +21,16 @@ curl https://www.chiral.one/download/install_pro.sh -sSf | sh
 Not supported yet
 
 ### Pro Version
-Download from this [link](https://github.com/chiral-data/chiral-db/releases/download/v0.1.2/chiral-pro-win.exe)
+Download from this [link](https://github.com/chiral-data/chiral/releases/download/v0.1.3/chiral-cli-pro.exe)
 {% endtab %}
 {% endtabs %}
 
-### On Windows
+----
 
-## [Applications](docs/applications)
+## Applications
 
-- OpenBabel
-- ReCGen
-
-
-
+- [OpenBabel](docs/apps/openbabel): The Open Source Chemistry Toolbox
+- [ReCGen](docs/apps/recgen): Generate virtual compounds based on input structure
 
 
 ## Documentation
@@ -42,6 +40,7 @@ Download from this [link](https://github.com/chiral-data/chiral-db/releases/down
 
 ## News
 
+- 2023-03-20: v0.1.3 released: the demonstration cluster from SAKURA internet upgrade to 80 nodes; ReCGen integrated; better job management; standard integartion process for new applications.
 - 2023-01-13: chiral-cli Pro v0.1.2 is released. A cluster of 20+ servers from [SAKURA internet](https://www.sakura.ad.jp/) is used as the computing backend.
 - 2023-01-06: chiral-cli v0.1.0 pre release [link](https://github.com/chiral-data/chiral-db/releases/tag/v0.1.0)
 - 2022-11-30: Demo service stopped

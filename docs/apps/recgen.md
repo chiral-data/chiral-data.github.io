@@ -1,0 +1,48 @@
+# Applications - ReCGen
+
+[ReCGen](https://www.mypresto5.jp/evaluation/#%E5%90%88%E6%88%90%E5%80%99%E8%A3%9C%E5%88%86%E5%AD%90%E3%83%BB%E5%90%88%E6%88%90%E5%AE%B9%E6%98%93%E6%80%A7%E4%BA%88%E6%B8%AC): Generate virtual compounds based on input structure
+
+{% tabs recgen %}
+
+{% tab recgen Build  %}
+
+Run a library-building job using ReCGen
+
+```bash
+recgen build --input ./ReCGen/examples/sample5.mol
+```
+
+## Benchmark testing
+
+3 samples from ReCGen source codes have been used for benchmark in a cloud server with a 20-core CPU and 16 GB memory. A job for each sample has run 10 times. 
+
+| Sample | Average Duration (seconds) | Standard Deviation |
+| ----------- | ----------- | ----------- |
+| sample 2 | 218.00 | 0.36  |
+| sample 3 | 5006.35 | 20.06 | 
+| sampel 5 | 380.18  | 0.50 | 
+
+
+## Free version
+ReCGen currently not supported
+
+## Pro version
+
+The pro version runs the jobs on a cluster comprised of 80 nodes (1 core, 2 GB). 
+
+### Sample 2 - 10 seconds
+
+<script async id="asciicast-D1FtcUYnq7cxHcesysfeLjR9N" src="https://asciinema.org/a/D1FtcUYnq7cxHcesysfeLjR9N.js" data-autoplay="true" data-size="big" data-speed="3" data-loop="true" data-startAt="10" data-cols="180" data-rows="15"></script>
+
+### Sampel 3 - 3 minutes 1 second 
+
+<script async id="asciicast-CAPUem5clrW8Odna4oGs17vdp" src="https://asciinema.org/a/CAPUem5clrW8Odna4oGs17vdp.js" data-autoplay="true" data-size="big" data-speed="3" data-loop="true" data-startAt="10" data-cols="180" data-rows="15"></script>
+
+### Sampel 5 - 34 seconds
+
+<script async id="asciicast-MbLxDwOIWKv2P7AtpiS8OV2SR" src="https://asciinema.org/a/MbLxDwOIWKv2P7AtpiS8OV2SR.js" data-autoplay="true" data-size="big" data-speed="3" data-loop="true" data-startAt="10" data-cols="180" data-rows="15"></script>
+{% endtab %}
+
+{% endtabs %} 
+
+
