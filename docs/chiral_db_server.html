@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>3 Ways to start a ChiralDB gRPC Server | chiral</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="3 Ways to start a ChiralDB gRPC Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="[“An Open-Source Tool for High-Performance Data Processing and Visualization written in Rust”]" />
+<meta property="og:description" content="[“An Open-Source Tool for High-Performance Data Processing and Visualization written in Rust”]" />
+<link rel="canonical" href="https://github.com/pages/chiral-data/docs/chiral_db_server.html" />
+<meta property="og:url" content="https://github.com/pages/chiral-data/docs/chiral_db_server.html" />
+<meta property="og:site_name" content="chiral" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="3 Ways to start a ChiralDB gRPC Server" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"[“An Open-Source Tool for High-Performance Data Processing and Visualization written in Rust”]","headline":"3 Ways to start a ChiralDB gRPC Server","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://github.com/pages/chiral-data/assets/img/logo.png"}},"url":"https://github.com/pages/chiral-data/docs/chiral_db_server.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/pages/chiral-data/assets/css/style.css?v=">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/pages/chiral-data/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+    <link rel="stylesheet" href="/assets/css/tab.css">
+    <link rel="stylesheet" href="/assets/css/codecopy.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <!-- <h1><a href="https://github.com/pages/chiral-data/">chiral</a></h1> -->
+
+        
+          <a href="https://github.com/pages/chiral-data/">
+            <img src="/pages/chiral-data/assets/img/logo.png" alt="Logo" />
+          </a>
+        
+
+        <p>An Open-Source Tool for High-Performance Data Processing and Visualization written in Rust</p>
+
+        <!--  -->
+
+        
+        <p class="view"><a href="https://github.com/chiral-data">View My GitHub Profile</a></p>
+        
+
+        
+      </header>
+      <section>
+
+      <h1 id="3-ways-to-start-a-chiraldb-grpc-server">3 Ways to start a ChiralDB gRPC Server</h1>
+
+<h2 id="1-pull-and-run-the-demo-docker-image-locally">1. Pull and Run the Demo Docker Image Locally</h2>
+
+<p>We proivde a demo docker image for testing purposes with fingerprint data of 10k molecules from <a href="https://chembl.gitbook.io/chembl-interface-documentation/downloads">ChEMBL</a>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker pull chiraljp/chiral-db-server              
+docker run <span class="nt">-p</span> 10000:10000 chiraljp/chiral-db-server:latest
+</code></pre></div></div>
+
+<p>Then, the service will be available via <a href="localhost:10000">localhost:10000</a></p>
+
+<h2 id="2-build-the-server-locally">2. Build the Server Locally</h2>
+
+<p>Local build can be flexible for data configuration.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># First of all, clone the project.</span>
+git clone https://github.com/chiral-data/chiral-db-grpc.git
+</code></pre></div></div>
+
+<p>Then, modify the file ChiralDB.toml for your own data configuration. 5 parameters are required to set a valid <code class="language-plaintext highlighter-rouge">fp_doc</code>.</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">name</code> acts as the “id” of a <code class="language-plaintext highlighter-rouge">fp_doc</code>. It will be used as a parameter of a query method. Multiple <code class="language-plaintext highlighter-rouge">fp_doc</code>s can be set with their unique names.</li>
+  <li>Fingerprint <code class="language-plaintext highlighter-rouge">kind</code> can be selected from the list <a href="https://docs.rs/chiral-db/latest/chiral_db/types/enum.FingerprintKind.html">here</a>.</li>
+  <li><code class="language-plaintext highlighter-rouge">nbits</code> represents how many bits of the fingerprint data for one molecule. For normal practice, it’s set as 512, 1024, 2048, 4096, … Memory usage should be paid attention to while you have a large amount of molecule with a large <code class="language-plaintext highlighter-rouge">nbits</code>, since ChiralDB puts all the data in memory for the purpose of a better performance.</li>
+  <li><code class="language-plaintext highlighter-rouge">filepath</code> is where the data file locates.</li>
+  <li>Currently <code class="language-plaintext highlighter-rouge">source</code> can be set as “Chembl” only with a reference list <a href="https://docs.rs/chiral-db/latest/chiral_db/types/enum.Source.html">here</a>.</li>
+</ul>
+
+<div class="language-toml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># ChiralDB.toml</span>
+<span class="nn">[[fp_doc]]</span>
+<span class="py">name</span> <span class="p">=</span> <span class="s">"ChEMBL"</span>
+<span class="py">kind</span> <span class="p">=</span> <span class="s">"OpenBabelECFP4"</span>
+<span class="py">nbits</span> <span class="p">=</span> <span class="mi">2048</span>
+<span class="py">filepath</span> <span class="p">=</span> <span class="s">"./data/chembl_30_chemreps_10k.txt"</span>
+<span class="py">source</span> <span class="p">=</span> <span class="s">"Chembl"</span>
+
+<span class="nn">[[fp_doc]]</span>
+<span class="py">name</span> <span class="p">=</span> <span class="s">"Another"</span>
+<span class="err">......</span>
+</code></pre></div></div>
+
+<p>Where the data file is ready and the configuration is set, we can build and run the server.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cargo build
+cargo run --bin chiral-db-server
+</code></pre></div></div>
+
+<h2 id="3-build-a-customized-docker-image">3. Build a Customized Docker Image</h2>
+
+<p>After tuning the codes according the steps above, the docker image can be rebuild and started with your own data and configuration.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker build -t chiral-db-server-new .
+docker run -p 10000:10000 chiral-db-server-new
+</code></pre></div></div>
+
+      <script src="/assets/js/tabs.js"></script>
+      <script src="/assets/js/codecopy.js"></script>
+
+      </section>
+      <footer>
+        
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="/pages/chiral-data/assets/js/scale.fix.js"></script>
+  </body>
+</html>

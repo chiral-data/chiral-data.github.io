@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Performance Test Report | chiral</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="Performance Test Report" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="[“An Open-Source Tool for High-Performance Data Processing and Visualization written in Rust”]" />
+<meta property="og:description" content="[“An Open-Source Tool for High-Performance Data Processing and Visualization written in Rust”]" />
+<link rel="canonical" href="https://github.com/pages/chiral-data/docs/performance_test.html" />
+<meta property="og:url" content="https://github.com/pages/chiral-data/docs/performance_test.html" />
+<meta property="og:site_name" content="chiral" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Performance Test Report" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"[“An Open-Source Tool for High-Performance Data Processing and Visualization written in Rust”]","headline":"Performance Test Report","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://github.com/pages/chiral-data/assets/img/logo.png"}},"url":"https://github.com/pages/chiral-data/docs/performance_test.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/pages/chiral-data/assets/css/style.css?v=">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/pages/chiral-data/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+    <link rel="stylesheet" href="/assets/css/tab.css">
+    <link rel="stylesheet" href="/assets/css/codecopy.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <!-- <h1><a href="https://github.com/pages/chiral-data/">chiral</a></h1> -->
+
+        
+          <a href="https://github.com/pages/chiral-data/">
+            <img src="/pages/chiral-data/assets/img/logo.png" alt="Logo" />
+          </a>
+        
+
+        <p>An Open-Source Tool for High-Performance Data Processing and Visualization written in Rust</p>
+
+        <!--  -->
+
+        
+        <p class="view"><a href="https://github.com/chiral-data">View My GitHub Profile</a></p>
+        
+
+        
+      </header>
+      <section>
+
+      <h1 id="performance-test-report">Performance Test Report</h1>
+
+<p>*Unit: second</p>
+
+<p>*Testing on: Mac mini M1 2020, 4 cores, 8 GB memory</p>
+
+<p>*Results for ChiralDB Free can be reproduced by running <code class="language-plaintext highlighter-rouge">cargo bench</code> under <a href="https://github.com/chiral-data/chiral-db">ChrialDB project</a></p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left"> </th>
+      <th style="text-align: right">ChiralDB Free</th>
+      <th style="text-align: right">ChiralDB Pro</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">OpenBabel ECFP4 Fingerprint generating - 100 molecules</td>
+      <td style="text-align: right">13.8e-3</td>
+      <td style="text-align: right">5.6e-3</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">OpenBabel ECFP4 Fingerprint generating - 200 molecules</td>
+      <td style="text-align: right">31.0e-3</td>
+      <td style="text-align: right">8.6e-3</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">OpenBabel ECFP4 Fingerprint generating - 500 molecules</td>
+      <td style="text-align: right">78.1e-3</td>
+      <td style="text-align: right">19.2e-3</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">OpenBabel ECFP4 Fingerprint generating - 1000 molecules</td>
+      <td style="text-align: right">158.4e-3</td>
+      <td style="text-align: right">38.9e-3</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">OpenBabel ECFP4 Tanimoto Similarity Query - 1000 molecules</td>
+      <td style="text-align: right">136.4e-6</td>
+      <td style="text-align: right">74.8e-6</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">OpenBabel ECFP4 Tanimoto Similarity Query - 2000 molecules</td>
+      <td style="text-align: right">274.8e-6</td>
+      <td style="text-align: right">104.5e-6</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">OpenBabel ECFP4 Tanimoto Similarity Query - 5000 molecules</td>
+      <td style="text-align: right">687.9e-6</td>
+      <td style="text-align: right">205.1e-6</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">OpenBabel ECFP4 Tanimoto Similarity Query - 10000 molecules</td>
+      <td style="text-align: right">1372.5e-6</td>
+      <td style="text-align: right">364.7e-6</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">OpenBabel Substructure Query - 100 molecules</td>
+      <td style="text-align: right">22.3e-3</td>
+      <td style="text-align: right">4.6e-3</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">OpenBabel Substructure Query - 200 molecules</td>
+      <td style="text-align: right">38.3e-3</td>
+      <td style="text-align: right">8.9e-3</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">OpenBabel Substructure Query - 500 molecules</td>
+      <td style="text-align: right">84.7e-3</td>
+      <td style="text-align: right">20.7e-3</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">OpenBabel Substructure Query - 1000 molecules</td>
+      <td style="text-align: right">182.5e-3</td>
+      <td style="text-align: right">40.4e-3</td>
+    </tr>
+  </tbody>
+</table>
+
+      <script src="/assets/js/tabs.js"></script>
+      <script src="/assets/js/codecopy.js"></script>
+
+      </section>
+      <footer>
+        
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="/pages/chiral-data/assets/js/scale.fix.js"></script>
+  </body>
+</html>
