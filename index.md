@@ -1,5 +1,13 @@
 ----
 
+## Chiral Scientific Cloud
+Now available at [here](http://cloud.chiral.one)
+
+### Chiral API Clients
+#### Java <a href="https://maven.fury.io/chiral/"><img src="//badge.fury.io/fp/gemfury.svg" alt="Private Repository"></a>
+
+#### Python ![PyPI](https://img.shields.io/pypi/v/chiral-bindings)
+
 ## Install Chiral Command-Line-Interface
 
 {% tabs log %}
@@ -69,3 +77,4 @@ Download from this [link](https://github.com/chiral-data/chiral/releases/downloa
 - Fukuoka Global Startup Cafe [link](https://startupcafe.jp/en/top-en/)
 
 ---
+
