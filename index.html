@@ -1,0 +1,106 @@
+---
+title: Chiral Computing Cloud
+description: Easy Cloud Migration for Computing Intensive Products 
+---
+<section class="hero">
+	<div class="text-container">
+		<h1 class="editable">
+			Host Compute-Intensive Software in the Cloud
+		</h1>
+		<!-- <p class="subtext editable">
+			Featuring User-Friendly APIs for a Range of Programming Languages
+		</p> -->
+		<div class="cta button alt"><a href="https://cloud.chiral.one">Try Demo</a></div>
+		<div>
+			<img src="{{ site.baseurl }}/images/chiral_cloud_migration.png" alt="Chiral Framework" class="screenshot editable" />
+		</div>
+	</div>
+</section>
+
+<div class="content">
+	<section>
+		<div class="container flex">
+			<div class="text editable">
+				<h2>
+					Simulations	
+				</h2>
+				<ul>
+					<li><p>
+						Avoid software installation	
+					</p></li>
+					<li><p>
+						Avoid cloud server configuration	
+					</p></li>
+					<li><p>
+						Use simple APIs to submit jobs and retrieve job results	
+					</p></li>
+				</ul>
+			</div>
+			<div class="image">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/B3j95qAvAE0?si=DouHAwzG9Sq9SZ6k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="container flex">
+			<div class="text editable">
+				<h2>
+					AI/ML Inference	
+				</h2>
+				<ul>
+					<li><p>
+						Easy deployment of AI/ML models	
+					</p></li>
+					<li><p>
+						Inferece with auto scaling	
+					</p></li>
+					<li><p>
+						No worries about ultra-large size of model weights and data	
+					</p></li>
+				</ul>
+			</div>
+			<div class="image">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/udVmKPsZjP0?si=mBf8r1-bRgRMEPVW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="container flex">
+			<div class="text editable">
+				<h2>
+					Data Processing	
+				</h2>
+				<ul>
+					<li><p>
+						Automatic parallelism and data split
+					</p></li>
+				</ul>
+			</div>
+			<div class="image">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/mWUSeM45d9Q?si=GDEecTWT9TGWFgdc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</div>
+		</div>
+	</section>
+
+	<section class="testimonial">
+		<div class="container flex">
+			{% for post in site.posts %}
+			<div class="testimonial-block">
+				<blockquote>
+					<p class="editable">
+						{{ post.excerpt }}
+					</p>
+					<p class="editable author">{{ post.title }}</p>
+				</blockquote>
+			</div>
+			{% endfor %}
+		</div>
+	</section>
+
+	<section class="bottom-cta">
+		<h2 class="editable"><strong>Migrate</strong> your compute-intensive software to the cloud today</h2>
+		<div class="button alt"><a href="https://cloud.chiral.one">Try Demo</a></div>
+	</section>
+</div>
