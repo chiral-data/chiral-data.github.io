@@ -4,12 +4,21 @@ description: >-
 ---
 
 <p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_staff_members/" class="btn"><strong>&#9998;</strong>Applications available in Chiral Computing Cloud</a></p>
-<ul class="staff">
-	{% for person in site.applications %}
+<ul class="apps">
+	{% for  app in site.applications %}
 		<li>
-			<div class="square-image"><img src="{% include relative-src.html src=person.image_path %}" alt="{{ person.name }}"/></div>
-			<div class="name"><a target="_blank" href="https://twitter.com/{{ person.twitter }}">{{ person.name }}</a></div>
-			<div class="position">{{ person.position }}</div>
+			<div class="square-image"><img src="{% include relative-src.html src=app.image_path %}" alt="{{ app.name }}"/></div>
+			<div class="name">
+				{% if app.details %} 
+					<a target="_blank" href="{{ app.details }}">{{ app.name }}</a></div>
+				{% else %}
+					{{ app.name }}
+				{% endif %}
+			<div class="desc">{{ app.desc }}</div>
+			<div>
+				{% if app.homepage %}[<a href="{{ app.homepage }}">homepage</a>]{% endif %}
+				{% if app.github %}[<a href="{{ app.github }}">github</a>]{% endif %}
+			</div>
 		</li>
 	{% endfor %}
 </ul>
