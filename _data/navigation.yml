@@ -6,6 +6,10 @@
 #   link: /blog/
 #   new_window: false
 #   highlight: false
+- name: Service 
+  link: /service/
+  new_window: false
+  highlight: false
 - name: Applications 
   link: /apps/
   new_window: false
@@ -18,3 +22,4 @@
   link: /contact/
   new_window: false
   highlight: false
+
