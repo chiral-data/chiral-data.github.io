@@ -96,8 +96,6 @@
         }
 
         .list {
-            display: flex;
-            justify-content: space-around;
             margin-bottom: 40px;
             padding-top: 30px;
             list-style: none;
@@ -119,8 +117,8 @@
 
     .domains {
         .list {
-            display: flex;
-            justify-content: space-around;
+            // display: flex;
+            // justify-content: space-around;
             margin-bottom: 40px;
             padding-top: 30px;
             list-style: none;
