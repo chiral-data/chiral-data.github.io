@@ -53,11 +53,7 @@
     }
     
     .point {
-        display: flex;
-        justify-content: center;
         .content {
-            display: flex;
-            justify-content: center;
             width: 80%;
             margin-bottom: 40px;
             padding: 40px 20px 0;
@@ -68,13 +64,11 @@
             border-radius: 20px;
 
             .img {
-                width: 40%;
                 align-self: end;
                 padding-bottom: 20px;
             }
 
             .list {
-                width: 40%;
                 align-self: center;
                 font-weight: bold;
                 font-size: 18px;
