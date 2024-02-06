@@ -10,6 +10,15 @@
 		{% if link.link == page.url %}
 			{% assign class = class | append: " active" %}
 		{% endif %}
-		<a href="{% include relative-src.html src=link.link %}" class="{{ class }}" {% if link.new_window %}target="_blank"{% endif %}>{{ link.name }}</a>
+
+		{% if link.name == "language" %}
+			{% if page.lang == "en" %}
+				<a href="{{ page.link_jp }}"><span class="emoji">🇯🇵</span> JP</a>
+			{% elsif page.lang == "jp" %}
+				<a href="{{ page.link_en }}"><span class="emoji">🇬🇧</span> EN</a>
+			{% endif %}
+		{% else %}
+			<a href="{% include relative-src.html src=link.link %}" class="{{ class }}" {% if link.new_window %}target="_blank"{% endif %}>{{ link.name }}</a>
+		{% endif %}
 	{% endfor %}
 </nav>

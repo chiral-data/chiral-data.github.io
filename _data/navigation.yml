@@ -6,6 +6,9 @@
 #   link: /blog/
 #   new_window: false
 #   highlight: false
+- name: language 
+  link: /lang/
+  highlight: true
 - name: Service 
   link: /service/
   new_window: false
@@ -22,4 +25,5 @@
   link: /contact/
   new_window: false
   highlight: false
+
 
